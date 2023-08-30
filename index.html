@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Are you Preeti Raj?</title>
+    <title>Dummy webview</title>
+    <script src="node_modules/clipboard/dist/clipboard.min.js"></script>
 </head>
 <body>
-    <h1>Are you Preeti Raj?</h1>
-    <p>hehehe</p>
+    <p>Testing copy on clip board behaviour from npm module</p>
+    <div id="copyText">This text can be copied.</div>
+    <button id="copyButton" data-clipboard-target="#copyText">Copy to Clipboard</button>
+
+    <script>
+        var clipboard = new ClipboardJS('#copyButton');
+    
+        clipboard.on('success', function(e) {
+            console.log('Text copied to clipboard:', e.text);
+        });
+    
+        clipboard.on('error', function(e) {
+            console.error('Failed to copy text to clipboard:', e.text);
+        });
+    </script>
+
 </body>
 </html>
