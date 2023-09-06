@@ -5,7 +5,7 @@
   "name": "webdemo",
   "version": "1.0.0",
   "description": "\"Sample project with react\"",
-  "main": "index.html",
+  "main": "index.js",
   "devDependencies": {
     "parcel": "^2.9.3"
   },
