@@ -1,11 +1,13 @@
-console.log('Rajmani')
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+// console.log('Rajmani')
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
 const heading = React.createElement("h1", {}, "Hello rajmani")
-root.render(heading)
 
-const jsxHeader = <h1>Namaste using JSX</h1>
+const jsxHeader = <h1 id='heading'>Namaste using JSX</h1>;
 
-console.log(heading)
-console.log(jsxHeader)
+// console.log(heading)
+root.render(jsxHeader)
