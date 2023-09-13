@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.nav-items > ul > li {
+    padding: 20px;
+}
+
+.restaurantCard {
+    width: 200px;
+    height: 400px;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 4px;
+}
+
+.restaurantCard:hover {
+    border: 1px solid rgb(119, 119, 119);
+}
+
+.restaurantLogo {
+    width: 100%;
+}
+
+.restaurantContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
